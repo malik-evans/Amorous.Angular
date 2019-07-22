@@ -1,0 +1,5 @@
+{
+  "tsconfig": "tsconfig.json",
+  "output": "../dist/browser",
+  "theme": "stripe"
+}

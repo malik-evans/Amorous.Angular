@@ -4,6 +4,7 @@ import {Store} from "@ngrx/store";
 import {FactoryBase} from "./design/factory/factory-base";
 import * as Faker from 'faker';
 import {Observable} from "rxjs";
+import {MenuItem} from "primeng/api";
 
 export interface User {
   id: string;
@@ -38,6 +39,9 @@ export class UserFactory extends FactoryBase<User> {
 })
 export class AppComponent implements OnInit {
   title = 'integration';
+  navItems: MenuItem[] = [
+    { label: "Me", url: "https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-2.2" }
+  ];
 
   userService: EntityCollectionService<User>;
   selectedUser: Observable<User>;

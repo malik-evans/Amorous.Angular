@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 import { DesignModule } from './design/design.module';
 import {CardModule} from "primeng/card";
+import {MenubarModule} from "primeng/menubar";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {CardModule} from "primeng/card";
     }),
     StoreDevtoolsModule.instrument({ }),
     DesignModule,
-    CardModule
+    CardModule,
+    MenubarModule
   ],
   providers: [UserFactory],
   bootstrap: [AppComponent]
